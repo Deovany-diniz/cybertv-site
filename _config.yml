@@ -1,0 +1,5 @@
+title: CyberTV
+description: Site de IPTV CyberTV
+baseurl: ""  # deixe vazio se for rodar na raiz do domínio
+url: "https://seunomedeusuario.github.io" # ajuste para o seu domínio GitHub Pages, se usar
+theme: jekyll-theme-primer
