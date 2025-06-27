@@ -1,31 +1,156 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>IPTV Power - Plano Mensal</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IPTV Power - Planos</title>
+    <style>
+        /* Fundo fixo e imagem cobrindo toda tela */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            background-image: url('img/fundo.jpg'); /* Substitua pelo caminho correto da sua imagem */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.75); /* Fundo semi-transparente para destacar texto */
+            padding: 20px;
+        }
+
+        .logo {
+            max-width: 120px;
+        }
+
+        h1,
+        h2 {
+            color: #00ff90;
+            margin-bottom: 10px;
+        }
+
+        /* Containers com fundo escuro translúcido para legibilidade */
+        .plano,
+        .teste-gratis,
+        .download-app {
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            max-width: 500px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        ul li {
+            margin: 8px 0;
+            border-bottom: 1px solid #333;
+            padding-bottom: 6px;
+        }
+
+        .preco {
+            font-size: 1.5em;
+            color: #ffd700;
+            margin: 15px 0;
+        }
+
+        /* Botões transparentes com borda verde */
+        .botao {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            background-color: transparent;
+            color: #00ff90;
+            font-weight: bold;
+            border: 2px solid #00ff90;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background-color: #00ff90;
+            color: #000;
+        }
+
+        .observacao {
+            font-size: 0.9em;
+            color: #ccc;
+            margin-top: -10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo IPTV Power" class="logo">
-
-        <h1>A MELHOR LISTA DE CANAIS FILMES E SÉRIES</h1>
+        <img src="img/logo.png" alt="Logo IPTV Power" class="logo" />
+        <h1>OS MELHORES APPS DE CANAIS, FILMES E SÉRIES</h1>
         <p>Disponíveis em uma única plataforma</p>
     </header>
+
+    <!-- Teste Grátis -->
+    <section class="teste-gratis">
+        <h2>Teste Grátis</h2>
+        <p>Experimente grátis por 24h sem compromisso!</p>
+        <a href="https://chat.whatsapp.com/ExBB1o57LGR4TMnzUK83Cd" class="botao" target="_blank">TESTE GRÁTIS</a>
+    </section>
+
+    <!-- Plano Mensal -->
     <section class="plano">
         <h2>Plano Mensal</h2>
         <ul>
             <li>1 Tela</li>
             <li>+100.000 Conteúdos</li>
             <li>Qualidade HD/SD</li>
-            <li>Guia de Programação [EPG]</li>
-            <li>Assista no Smartphone</li>
-            <li>Assista no Computador</li>
-            <li>Pacote Filmes e Séries</li>
+            <li>Guia de Programação (EPG)</li>
+            <li>Filmes, Séries e Canais</li>
         </ul>
         <p class="preco">R$25,00</p>
-        <a href="https://chat.whatsapp.com/ExBB1o57LGR4TMnzUK83Cd" class="botao" target="_blank">ASSINAR PLANO</a>
+        <a href="https://chat.whatsapp.com/ExBB1o57LGR4TMnzUK83Cd" class="botao" target="_blank">ASSINAR MENSAL</a>
+    </section>
+
+    <!-- Plano Trimestral -->
+    <section class="plano">
+        <h2>Plano Trimestral</h2>
+        <ul>
+            <li>1 Tela</li>
+            <li>+100.000 Conteúdos</li>
+            <li>Suporte VIP</li>
+            <li>Economia de R$10</li>
+        </ul>
+        <p class="preco">R$65,00</p>
+        <a href="https://chat.whatsapp.com/ExBB1o57LGR4TMnzUK83Cd" class="botao" target="_blank">ASSINAR TRIMESTRAL</a>
+    </section>
+
+    <!-- Plano Anual -->
+    <section class="plano">
+        <h2>Plano Anual</h2>
+        <ul>
+            <li>1 Tela</li>
+            <li>+100.000 Conteúdos</li>
+            <li>Suporte Prioritário</li>
+            <li>Economia de R$100</li>
+        </ul>
+        <p class="preco">R$240,00</p>
+        <a href="https://chat.whatsapp.com/ExBB1o57LGR4TMnzUK83Cd" class="botao" target="_blank">ASSINAR ANUAL</a>
+    </section>
+
+    <!-- Download do App -->
+    <section class="download-app">
+        <h2>Baixe os Apps</h2>
+        <p>Disponível para Android:</p>
+        <a href="https://drive.google.com/drive/folders/1ZgywyyY7swIsopF7t_AZ6NqrHq9Br1UD" class="botao" target="_blank">TODOS OS APPS</a>
+        <a href="https://www.mediafire.com/file/lvsiby8bukycif1/ibo_chamel/file" class="botao" target="_blank">BAIXAR IBO PLAYER</a>
+        <p class="observacao">Clique em “Fazer download” se aparecer aviso do Google Drive.</p>
     </section>
 </body>
-</html> 
+</html>
